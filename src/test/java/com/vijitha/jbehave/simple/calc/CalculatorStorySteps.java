@@ -24,7 +24,7 @@ import org.junit.Test;
  * @author Vijitha Epa
  * 
  */
-public class CalculatorScenario extends JUnitStory {
+public class CalculatorStorySteps extends JUnitStory {
 
 	private int x;
 	private int y;
@@ -52,9 +52,9 @@ public class CalculatorScenario extends JUnitStory {
 		calculator.subtractNumbers(x, y);
 	}
 
-	@Then("result should be $result")
-	public void validateResult(int result) {
-		Assert.assertEquals(result, calculator.getResult());
+	@Then("result should be $results")
+	public void validateResult(int results) {
+		Assert.assertEquals(results, calculator.getResult());
 	}
 
 	@Override

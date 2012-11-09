@@ -6,7 +6,7 @@ I want to Calculate result for given marks
 Scenario: get the result as pass
 Given a result with marks <computer>, <phy>, <chem> for subjects
 When calculate result
-Then result should be <result> for scenario <scenario>
+Then results should be <result> for scenario <scenario>
 
 Examples:
 |scenario|computer|phy|chem|result|

@@ -5,6 +5,7 @@ Contents :
 .
 ├── pom.xml
 ├── ReadMe.txt
+├── ReadMe.txt~
 └── src
     ├── main
     │   ├── java
@@ -24,15 +25,22 @@ Contents :
         │           └── jbehave
         │               └── simple
         │                   ├── calc
-        │                   │   ├── CalculatorScenario.java
-        │                   │   └── calculator_scenario.story
-        │                   ├── ResultGeneratorStory.java
-        │                   ├── result_generator_story.story
+        │                   │   ├── CalculatorStorySteps.java
+        │                   │   └── calculator_story_steps.story
         │                   └── results
-        │                       └── ResultGeneratorSteps.java
+        │                       ├── ResultGeneratorStorySteps.java
+        │                       └── result_generator_story_steps.story
         └── resources
 
 
+
+Description
+-----------
+This example explain two simple methods of BDD implements using JBehaviour
+1 - Test data using in line parameters (CalculatorStorySteps.java)
+2 - Test data using a table (ResultGeneratorStorySteps.java)
+
+Both the classes are run as JUnitStory.
 
 
 Building the Project.
@@ -47,11 +55,12 @@ eClipse 3.5 or higher (Optional)
 
 Steps:
 ------
-TODO: need to describe steps
+1 - To run the test in the application
+    mvn clean install
 
 Running the application.
 ========================
 
-TODO: need to describe steps
+This sample is done only for Testing purpose.
 
 
